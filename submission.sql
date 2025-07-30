@@ -15,7 +15,7 @@ SELECT * FROM emptystack_accounts WHERE last_name = 'Steele';
 SELECT * FROM emptystack_messages; 
 --I noticed one with the subject in all caps TAXI and did a query to find the post with the subject TAXI
 SELECT * FROM emptystack_messages WHERE subject LIKE '%TAXI%';
--- I took note of the user and went back to the emptystack_accounts to find the user with the same username as the post.
+-- I took note of the admin user and went back to the emptystack_accounts to find the user with the same username as the post.
 SELECT * FROM emptystack_accounts WHERE username = 'your-boss-99';
 --I took note of the password and tried to login with the username and password, i succeeded but had to then go back and find the PROJECT with the code containing the word TAXI in it.
 SELECT * FROM emptystack_projects WHERE code = 'TAXI';
